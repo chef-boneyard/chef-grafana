@@ -17,4 +17,11 @@ describe 'chef-grafana::default' do
   describe package('grafana') do
     it { should be_installed }
   end
+
+  describe file('/etc/grafana/grafana.ini') do
+    it { should be_owned_by 'root' }
+    it { should be_grouped_into 'root' }
+    it { should be_mode 0644 }
+    it { should contain '# Managed by Chef' }
+  end
 end

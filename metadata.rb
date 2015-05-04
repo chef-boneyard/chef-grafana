@@ -1,6 +1,6 @@
 name "chef-grafana"
 description "Installs/Configures grafana"
-long_description "Installs/Configures grafana"
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 maintainer "Mark Harrison"
 maintainer_email "mharrison@chef.io"
 license "MIT"

@@ -1,0 +1,8 @@
+# Managed by Chef
+<% @config.each do |section, items| %>
+
+[<%= section %>]
+<% items.each do |k, v| %>
+<%= k %> = <%= v %>
+<% end %>
+<% end %>

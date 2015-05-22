@@ -4,7 +4,7 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 maintainer "Mark Harrison"
 maintainer_email "mharrison@chef.io"
 license "MIT"
-version "0.2.0"
+version "0.2.1"
 
 source_url "https://github.com/mivok/chef-grafana"
 

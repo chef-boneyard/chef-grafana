@@ -4,10 +4,3 @@ cookbook_file "home.json" do
   group "root"
   mode "0644"
 end
-
-cookbook_file "empty.json" do
-  path "#{node['chef-grafana']['dashboard_path']}/empty.json"
-  owner "root"
-  group "root"
-  mode "0644"
-end

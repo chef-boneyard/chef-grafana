@@ -1,6 +1,9 @@
-# Note: most of these are grafana defaults and don't need to be explicitly
-# specified in the config file, and so are commented out here, but left in for
-# reference.
+default['chef-grafana']['dashboard_path'] = \
+  '/usr/share/grafana/public/dashboards'
+
+# Note: most of the following are grafana defaults and don't need to be
+# explicitly specified in the config file, and so are commented out here, but
+# left in for reference.
 
 # paths
 default['chef-grafana']['config']['paths']['data'] = "/var/lib/grafana"

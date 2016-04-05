@@ -15,6 +15,5 @@ for details on the process and how to become a maintainer or the project lead.
 # Maintainers
 * [Mark Harrison](https://github.com/mivok)
 * [Jennifer Davis](https://github.com/sigje)
-* [Sean OMeara](https://github.com/someara)
 * [Tim Smith](https://github.com/tas50)
 * [Thom May](https://github.com/thommay)

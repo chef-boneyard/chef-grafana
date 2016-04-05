@@ -1,9 +1,0 @@
-DEPENDENCIES
-  chef-grafana
-    path: .
-    metadata: true
-
-GRAPH
-  apt (2.7.0)
-  chef-grafana (0.2.1)
-    apt (>= 0.0.0)

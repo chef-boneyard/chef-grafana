@@ -15,6 +15,7 @@ end
 
 package 'grafana' do
   action :upgrade
+  notifies :restart, 'service[grafana-server]'
 end
 
 service 'grafana-server' do

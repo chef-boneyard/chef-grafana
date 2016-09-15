@@ -13,7 +13,9 @@ apt_repository 'grafana' do
   action :add
 end
 
-package 'grafana'
+package 'grafana' do
+  action :upgrade
+end
 
 service 'grafana-server' do
   action [:enable, :start]

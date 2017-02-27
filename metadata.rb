@@ -11,7 +11,8 @@ version '0.2.2'
   supports os
 end
 
+depends 'apt'
+
 source_url 'https://github.com/chef-cookbooks/chef-grafana'
 issues_url 'https://github.com/chef-cookbooks/chef-grafana/issues'
-chef_version '>= 12.1'
-depends 'apt'
+chef_version '>= 12.1' if respond_to?(:chef_version)

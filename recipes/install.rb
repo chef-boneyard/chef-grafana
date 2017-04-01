@@ -17,7 +17,7 @@ when 'debian'
 when 'rhel'
   yum_repository 'grafana' do
     description 'Grafana - Stable'
-    baseurl 'https://packagecloud.io/grafana/stable/el/$releasever/$basearch'
+    baseurl "https://packagecloud.io/grafana/stable/el/#{node['platform_version'].to_i}/$basearch"
     enabled true
     gpgcheck true
     gpgkey 'https://packagecloud.io/gpg.key https://grafanarel.s3.amazonaws.com/RPM-GPG-KEY-grafana'

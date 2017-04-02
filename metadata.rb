@@ -1,11 +1,11 @@
 name 'chef-grafana'
-maintainer 'Mark Harrison'
-maintainer_email 'mharrison@chef.io'
-license 'Apache 2.0'
+maintainer 'Chef Software, Inc.'
+maintainer_email 'cookbooks@chef.io'
+license 'Apache-2.0'
 description 'Installs/Configures grafana'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 
-version '0.2.2'
+version '0.3.0'
 
 %w(ubuntu debian centos).each do |os|
   supports os

@@ -1,3 +1,6 @@
 chef-grafana Cookbook CHANGELOG
 ===============================
-This file is used to list changes made in each version of the chef-grafana cookbook.
+
+## 0.3.0 (2017-04-01)
+
+* Add support for rhel platforms.

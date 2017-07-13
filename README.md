@@ -30,8 +30,6 @@ Other recipes:
 * grafana::install - this installs grafana and starts the service, but doesn't
   perform any configuration of grafana.ini.
 * grafana::configure - this configures grafana.ini.
-* grafana::default_dashboards - this replaces the home dashboard with a
-  different file.
 
 ## Configuration
 

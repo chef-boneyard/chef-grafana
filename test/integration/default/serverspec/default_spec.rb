@@ -24,12 +24,4 @@ describe 'chef-grafana::default' do
     it { should be_mode 644 }
     it { should contain '# Managed by Chef' }
   end
-
-  describe file('/usr/share/grafana/public/dashboards/home.json') do
-    it { should be_owned_by 'root' }
-    it { should be_grouped_into 'root' }
-    it { should be_mode 644 }
-    # This is the main change for the starred dashboard list in home.json
-    it { should contain '"limit": 0,' }
-  end
 end

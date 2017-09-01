@@ -10,8 +10,8 @@ platforms:
     run_list: apt::default
   - name: ubuntu-16.04
     run_list: apt::default
-  - name: centos-6.9
-  - name: centos-7.3
+  - name: centos-6
+  - name: centos-7
 
 suites:
   - name: default

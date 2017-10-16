@@ -1,6 +1,9 @@
 default['chef-grafana']['dashboard_path'] = \
   '/usr/share/grafana/public/dashboards'
 
+# options for the install recipe
+default['chef-grafana']['install']['channel'] = 'stable' # this can be 'stable' or 'testing'
+
 # Note: most of the following are grafana defaults and don't need to be
 # explicitly specified in the config file, and so are commented out here, but
 # left in for reference.

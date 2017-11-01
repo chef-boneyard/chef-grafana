@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/chef-cookbooks/chef-grafana.svg?branch=master)](https://travis-ci.org/chef-cookbooks/chef-grafana)
 
-This cookbook installs and configures Grafana 2, a dashboard application for
+This cookbook installs and configures Grafana, a dashboard application for
 graphite and influxdb.
 
 
@@ -22,8 +22,14 @@ Requirements
 
 ## Recipes
 
-The default recipe will install grafana 2, configure grafana.ini, and start
-the service.
+The default recipe will install the latest stable Grafana from
+[the official packagecloud repository](https://packagecloud.io/grafana/),
+configure grafana.ini, and start the service.
+
+To install the latest unstable release, set:
+```ruby
+node['chef-grafana']['install']['channel'] = 'testing'
+```
 
 Other recipes:
 

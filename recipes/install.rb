@@ -27,7 +27,12 @@ when 'rhel'
 end
 
 package 'grafana' do
-  action :upgrade
+  if node['chef-grafana']['install']['version']
+    action :install
+    version node['chef-grafana']['install']['version']
+  else
+    action :upgrade
+  end
   notifies :restart, 'service[grafana-server]'
 end
 

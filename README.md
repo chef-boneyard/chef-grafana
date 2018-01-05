@@ -31,6 +31,11 @@ To install the latest unstable release, set:
 node['chef-grafana']['install']['channel'] = 'testing'
 ```
 
+To install a specific Grafana version, set:
+```ruby
+node['chef-grafana']['install']['version'] = '4.5.0'
+```
+
 Other recipes:
 
 * grafana::install - this installs grafana and starts the service, but doesn't

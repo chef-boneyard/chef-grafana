@@ -3,6 +3,7 @@ default['chef-grafana']['dashboard_path'] = \
 
 # options for the install recipe
 default['chef-grafana']['install']['channel'] = 'stable' # this can be 'stable' or 'testing'
+# default['chef-grafana']['install']['version'] = '4.6.3'
 
 # Note: most of the following are grafana defaults and don't need to be
 # explicitly specified in the config file, and so are commented out here, but
